@@ -1,0 +1,61 @@
+.arc-nav{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    /*border: 15px solid yellow;*/
+    background-color: lightcoral;
+    position: fixed;
+    bottom: -150px;
+    left: 50%;
+    margin-left: -150px;
+    overflow: hidden;
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    -webkit-transition: all .3s ease;
+}
+.arc-nav.open{
+    text-transform: scale(1);
+    -webkit-transform:scale(1);
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 300px;
+    position: fixed;
+    left: 50%;
+    bottom: -30px;
+    margin-left: -30px;
+    z-index: 2;
+    background-color: lightblue;
+}
+.sub{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: lightsalmon;
+    -webkit-transform: rotate(0deg) skew(30deg, 30deg) ;
+    -webkit-transform-origin: 150px 150px;
+}
+.sub:first-child{
+    -webkit-transform: rotate(-30deg) skew(30deg, 30deg);
+}
+.sub:nth-child(2){
+    background-color: lightcoral;
+    -webkit-transform: rotate(0deg) skew(30deg, 30deg);
+}
+.sub:nth-child(3){
+    -webkit-transform: rotate(30deg) skew(30deg, 30deg);
+}
+.sub:nth-child(4){
+    background-color: lightcoral;
+    -webkit-transform: rotate(60deg) skew(30deg, 30deg);
+}
+
+.icon{
+    width: 40px;
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    -webkit-transform: rotate(-75deg);
+    -webkit-transform-origin: 20px 100px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>css3</title>
+    <link rel="stylesheet" type="text/css" href="css/arc.css">
+</head>
+<body>
+<div class="btn">
+</div>
+<div class='arc-nav'>
+    <div class="sub">
+    </div>
+    <div class="sub">
+    </div>
+    <div class="sub">
+    </div>
+    <div class="sub">
+    </div>
+    <div class="icon">邮箱</div>
+</div>
+<script type="text/javascript">
+    !function () {
+        var nav  = document.querySelector('.arc-nav');
+        document.querySelector('.btn').addEventListener('click', function () {
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open');
+            } else {
+                nav.classList.add('open');
+            }
+        });
+    }();
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.frame-box{
+    position: absolute;
+    /*border: 1px solid;*/
+    padding: 6px 12px;
+    /*-webit-transition: top left 2s;*/
+    transition: top 1s, left 1s, opacity 1s;
+    -ms-transition: top 1s, left 1s, opacity 1s;
+    -webkit-transition: top 1s, left 1s, opacity 1s;
+}
+
+.photo-content{
+    height: 100%;
+    border: 1px solid;
+    text-align: center;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.photo-img{
+    max-width: 198px;
+    max-height: 264px;
+    margin-top: 12px;
+}
+
+.float-box {
+    position: absolute;
+    padding: 6px 12px;
+    display: none;
+}
+
+@font-face {
+    font-family: "fashionista";
+    src: url("fashionista.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.photo-desc-div {
+    background-color:#ccc;
+    opacity: 0.8;
+    margin: 6px 12px;
+}
+.photo-desc {
+    font-family: fashionista;
+    font-size: 14px;
+    line-height: 21px;
+}
